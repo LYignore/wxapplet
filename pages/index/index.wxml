@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class="userinfo" wx:if="{{wxShow}}">
+    <view class="animate-wrapper4">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{weburl}}logo.png" mode="cover" ></image>
+    </view>
+    <button wx:if="{{showLogin}}" class="getPhoneNumber" type="primary" open-type="getPhoneNumber" size="default" bindgetphonenumber="getPhoneNumber" >微信手机号登陆</button>
+    <navigator wx:else open-type="exit" target="miniProgram">
+      <button class="getPhoneNumber" type="primary" size="default" >关闭界面</button>
+    </navigator>    
+  </view>
+</view>

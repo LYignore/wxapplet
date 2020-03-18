@@ -1,0 +1,9 @@
+<template name="IH_OperationBTN">
+    <view animation="{{animationCheckAll}}" class='operation-check-all' catchtouchstart='o_checkAll'>{{animationConfirmTxt}}</view>
+    <view animation="{{animationDel}}" class='operation-delete' catchtouchstart='o_Delete'>
+        {{operationBtnTxtDel}} 
+    </view>
+    <view animation="{{animationExp}}" class='operation-export' catchtouchstart='o_Export'>
+        {{operationBtnTxtExp}}
+    </view>
+</template>

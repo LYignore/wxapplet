@@ -1,0 +1,7 @@
+<template name="ShowToast">
+    <view class='bigCover' catchtouchstart='stop' style='display: {{showToastDisplay}};'>
+        <view class='loading' style='background-image: url({{weburl}}upLoadFile-icon.gif);'>
+            识别中请稍等
+        </view>
+    </view>
+</template>

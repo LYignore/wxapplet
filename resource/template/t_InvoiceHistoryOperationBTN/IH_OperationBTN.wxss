@@ -1,0 +1,61 @@
+.operation-delete {
+    position: fixed;
+    bottom: 20rpx;
+    width: 260rpx;
+    height: 90rpx;
+    border-radius: 200rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #fff;
+    letter-spacing: 0.34rpx;
+    text-align: center;
+    line-height: 90rpx;
+    left: 80rpx;
+    background-image: linear-gradient(90deg, #f7b733 2%, #fc4a1a 98%);
+    box-shadow: 0 4rpx 12rpx 0 rgba(247, 181, 50, 0.67);
+}
+
+.operation-export {
+    position: fixed;
+    bottom: 20rpx;
+    width: 260rpx;
+    height: 90rpx;
+    border-radius: 200rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #fff;
+    letter-spacing: 0.34rpx;
+    text-align: center;
+    line-height: 90rpx;
+    right: 80rpx;
+    background-image: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    box-shadow: 0 4rpx 12rpx 0 rgba(0, 196, 255, 0.53);
+}
+
+/* .operation-delete {
+    width: 240rpx;
+    left: 255rpx;
+} */
+
+/* .operation-export {
+    right: 60rpx;
+    width: 160rpx;
+} */
+
+ .operation-check-all {
+    position: fixed;
+    bottom: 20rpx;
+    width: 0rpx;
+    height: 90rpx;
+    border-radius: 200rpx;
+    font-family: PingFangSC-Medium;
+    font-size: 28rpx;
+    color: #fff;
+    letter-spacing: 0.34rpx;
+    text-align: center;
+    line-height: 90rpx;
+    left: 60rpx;
+    background-image: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    box-shadow: 0 4rpx 12rpx 0 rgba(0, 196, 255, 0.53);
+    opacity: 0;
+} 

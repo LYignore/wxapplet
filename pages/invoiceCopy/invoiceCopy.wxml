@@ -1,0 +1,9 @@
+<import src="../../resource/template/t_ShowToast/ShowToast" />
+<view class='container'>
+    <image class='logo' src="{{weburl}}logo.png" mode="widthFix"></image>
+    <view class='content2'>欢迎使用票据采集器</view>
+    <view class='content1'>智能创想未来</view>
+     <view class='btn btn1' bindtouchend='gotoGuide'>进入拍摄教程</view>
+    <view class='btn btn2' bindtouchend='gotoPhoto'>直接拍摄</view>
+    <template is="ShowToast" data="{{weburl,showToastDisplay}}" />
+</view>

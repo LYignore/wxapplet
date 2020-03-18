@@ -1,0 +1,9 @@
+<import src="../../resource/template/t_ShowToast/ShowToast" />
+
+<view class='title1'>{{p0.t1}}</view>
+<view class='title2'>{{p0.t2}}</view>
+<image class='img' src="{{p0.img}}" mode="widthFix"></image>
+<view class='btn' bindtouchend='next'>{{p0.btn}}</view>
+<image class='light' src="{{p0.light}}" mode="widthFix"></image>
+<navigator class='skip' url='/pages/invoiceCopy/invoiceCopy' style='display:{{show}}'>跳过教程</navigator>
+<view class='back' bindtouchend='last' style='display:{{back_btn}}'>回退</view>

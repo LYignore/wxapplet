@@ -1,0 +1,36 @@
+<template name="IH_ItemCard">
+    <view class='itemCard' data-invoiceID="{{item.id}}" catchtap='choiceItem' data-verify="{{item.verify}}">
+        <view class='leftStatus{{invoiceType.invoiceType(item,index)}}'></view>
+        <!-- <view class='choiceCircle' data-choicety="{{item.bechoice}}"></view>  -->
+        <view class='choiceCircle' data-choicety="{{item.bechoice}}" style='background-image: url({{item.bechoice==true?weburl+"choice-del-icon.png":""}});'></view>
+        <view class='mid-part' animation="{{animationCardMove}}">
+            <view class='mid-title'>
+                {{item.payer}}
+            </view>
+            <view class='mid-data'>开票日期：{{item.issued_date}}</view>
+            <view class='mid-price'>
+                <font>税价合计：
+                    <font style="color:#009DFF">{{item.total}}</font>
+                </font>
+                <font class="inptType" wx:if="{{item.mine=='0'}}">他人录入</font>
+            </view>
+        </view>
+        <view class='rightStatus' wx:if="{{invoiceType.invoiceType(item,index) == 0}}" style='background-image: url({{weburl}}test-true-icon.png);'></view>
+        <view class='rightStatus' wx:elif="{{invoiceType.invoiceType(item,index) == 1}}" style='background-image: url({{weburl}}test-false-icon.png);'></view>
+        <view class='rightStatus' wx:elif="{{invoiceType.invoiceType(item,index)== 2}}" style='background-image: url({{weburl}}untest-icon.png);'></view>
+    </view>
+    <wxs module="invoiceType">
+        var invoiceType = function(item, index) {
+            if (item.checked == '0') {
+                return "2"
+            } else {
+                if (item.verify == '0') {
+                    return "1"
+                } else {
+                    return "0"
+                }
+            }
+        }
+        module.exports.invoiceType = invoiceType;
+    </wxs>
+</template>
